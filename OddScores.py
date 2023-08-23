@@ -1,0 +1,1 @@
+test_scores =[26, 49, 98, 87, 62, 75]  sum_of_odd_scores = 0  for scorein test_scores:if score  %2 != 0:sum_of_odd_scores += score       print ("Sum of odd scores:", sum_of_odd_scores)
