@@ -1,0 +1,79 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marieedmoncera/58010-DSAA/blob/main/Astack.stack.ipyn\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Stack:\n",
+        "  def __init__(self):\n",
+        "    self.stack = []\n",
+        "\n",
+        "  def add(self, dataval):\n",
+        "      if dataval not in self.stack:\n",
+        "        self.stack.append(dataval)\n",
+        "        return True\n",
+        "      else:\n",
+        "        return False\n",
+        "\n",
+        "  def remove(self):\n",
+        "      if len(self.stack)<=0:\n",
+        "        return(\"No element in the Stack\")\n",
+        "      else:\n",
+        "       return self.stack.pop()\n",
+        "\n",
+        "AStack=Stack()\n",
+        "AStack.add(\"Mon\")\n",
+        "AStack.add(\"Tues\")\n",
+        "AStack.add(\"Wed\")\n",
+        "AStack.add(\"Thu\")\n",
+        "AStack.add(\"Fri\")\n",
+        "AStack.add(\"Sat\")\n",
+        "AStack.add(\"Sun\")\n",
+        "\n",
+        "\n",
+        "print(AStack.stack)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pSPZcnC566Z0",
+        "outputId": "4425bdab-590f-45c6-c0a4-091893b077d5"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
